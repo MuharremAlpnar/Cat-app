@@ -64,3 +64,38 @@ Bir form gönderildiğinde, formdaki her bir <input> elementi, name özniteliği
 ----> placeholder<-----insanlara bir girdiye ne tür bilgilerin girilmesi gerektiği konusunda ipucu vermek için kullanılır.
 
 ---->required<----To prevent a user from submitting your form when required information is missing.There's no need to set a value
+
+---->formda bulunan buton bir özellik vrilmesse formu action özniteliğindeki adrese form bilgilerini gönderir
+
+----inputun altına buton koymama rağmen aynı satırda göründü bunun sebebi ikisininde inline element olmasıdır
+
+----butona tıklandığında varsayılan olarak actiona bilgi gönderir fakat karışıklılıga sebep olmaması için type attributesini submit olarak ayarlamamız gerekir (varsayılan karışıklılığa sebep olabilir)
+
+----You can use radio buttons for questions where you want only one answer out of multiple options.
+
+----label elements are used to help associate the text for an input element with the input element itself
+        -----There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+----The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
+
+-----To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+------Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.(inputa value ve name değerlerini form databasede karışıklık çıkarmaması için eklememiz gerekir AYNI ŞEY CHECKBOX İÇİN DE GEÇERLİ)
+value değerini kolaylık açısından id ile aynı deper verilir
+
+-----The fieldset element is used to group related inputs and labels together in a web form.(genelde div kullanılır fieldsetin yerine fieldsette varsayılan olarak içeriğe bir sınır ekler)
+----The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+----Forms commonly use checkboxes for questions that may have more than one answer.
+
+------inputa name özniteliği vermek serverin formu daha rahat işlemesine olanak sağlar
+
+-----Checkboxlardan birinin varsayılan olarak seçili olmasını istiyorsak checked özniteliği ekleyebiliriz(radio buton için selected eklemekle aynı şey)
+
+-----a elemnti içinde bulunan metni bir bağlantıya dönüştürür
+
+-----head elementinin içinde bulunan title elementi sayfanın üst kısmında ararma motorunda sayfanın adını gösterir
+
+----- HTML'nin attributesi olan lang elementi sayfanın dilini ifade eder bizim oluşturduğumuz sayfanin dili şu anda ingilizcedir
+
+-----UTF-8 metası içinde hangi karakter setleerini barındıracağını anlatır
